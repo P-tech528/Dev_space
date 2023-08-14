@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Templates that creates Ec2 Instance
+Resources:
+  PrinceEc2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      Tags:
+        - Key: Name
+          Value: Ec2instanceforJunior 
+      ImageId: "ami-05b5a865c3579bbc4"
+      InstanceType: t2.micro
+      KeyName: "R5"
+      BlockDeviceMappings: 
+      - DeviceName: "/dev/sda1"
+        Ebs: 
+          VolumeType: "gp2"
+          DeleteOnTermination: "true"
+          VolumeSize: "20"
+    

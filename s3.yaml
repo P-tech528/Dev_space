@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: S3 Bucket
+Resources:
+  myS3BucketUzomaPrince:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: "uzoma-prince-bucket"
+      
+  myS3BucketPeterChimex:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: "mike-henry-bucket"
+      
+  myS3BucketVenessaHope:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: "jenny-lopez-bucket"
